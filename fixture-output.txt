@@ -1,0 +1,11 @@
+TAP version 13
+# test fixture
+ok 1 should be equal
+ok 2 should be equal
+
+1..2
+# tests 2
+# pass  2
+
+# ok
+

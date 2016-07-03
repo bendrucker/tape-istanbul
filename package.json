@@ -1,0 +1,53 @@
+{
+  "name": "tape-istanbul",
+  "main": "index.js",
+  "bin": {
+    "tape-istanbul": "cli.js"
+  },
+  "version": "0.0.0",
+  "description": "Print and parse code coverage with tape tests",
+  "license": "MIT",
+  "repository": "bendrucker/tape-istanbul",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "tape",
+    "tap",
+    "istanbul",
+    "test",
+    "coverage",
+    "parser",
+    "pipe",
+    "cli"
+  ],
+  "dependencies": {
+    "concat-stream": "~1.5.1",
+    "global": "~4.3.0",
+    "istanbul": "~0.4.4",
+    "pumpify": "~1.3.5",
+    "split2": "~2.1.0",
+    "tap-parser": "~1.2.2",
+    "through2": "~2.0.1"
+  },
+  "peerDependencies": {
+    "tape": "*",
+    "browserify-istanbul": "*"
+  },
+  "devDependencies": {
+    "browserify": "~13.0.1",
+    "browserify-istanbul": "~2.0.0",
+    "duplexify": "~3.4.3",
+    "meow": "~3.7.0",
+    "standard": "^7.0.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "*.js"
+  ]
+}
