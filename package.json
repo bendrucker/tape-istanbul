@@ -36,8 +36,7 @@
     "through2": "~2.0.1"
   },
   "peerDependencies": {
-    "tape": "*",
-    "browserify-istanbul": "*"
+    "tape": "*"
   },
   "devDependencies": {
     "browserify": "~13.0.1",
