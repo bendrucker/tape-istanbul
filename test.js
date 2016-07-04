@@ -22,9 +22,11 @@ test('api', function (t) {
     .pipe(tapeIstanbul())
     .pipe(concat(function (output) {
       t.equal(output.toString(), tapOutput, 'passes tap output through')
-      const coverage = JSON.parse(fs.readFileSync('coverage.json'))
-      t.ok(coverage, 'generates a coverage json file')
-      fs.unlinkSync('coverage.json')
+      const coverageFile = fs.readFileSync('coverage.json')
+      t.doesNotThrow(function () {
+        t.ok(JSON.parse(coverageFile), 'generates a coverage json file')
+        fs.unlinkSync('coverage.json')
+      })
     }))
 })
 
@@ -39,9 +41,11 @@ test('cli', function (t) {
     .pipe(cli())
     .pipe(concat(function (output) {
       t.equal(output.toString(), tapOutput, 'passes tap output through')
-      const coverage = JSON.parse(fs.readFileSync('coverage.json'))
-      t.ok(coverage, 'generates a coverage json file')
-      fs.unlinkSync('coverage.json')
+      const coverageFile = fs.readFileSync('coverage.json')
+      t.doesNotThrow(function () {
+        t.ok(JSON.parse(coverageFile), 'generates a coverage json file')
+        fs.unlinkSync('coverage.json')
+      })
     }))
 })
 
