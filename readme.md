@@ -29,6 +29,15 @@ browserify()
 $ browserify test.js -p tape-istanbul/plugin | tape-run | tape-istanbul
 ```
 
+tape-istanbul is composed of two parts: 
+
+* a tape hook that print coverage data as JSON after your tests run ([hook.js](hook.js))
+* a parser that separates the coverage data from TAP output ([parser.js](parser.js), [index.js](index.js))
+
+The hook purely writes text and the for the parser to transform. The parser streams all output and excludes the coverage data, which it writes to a file. The stream will not end until coverage has been fully written.
+
+For convenience, a browserify plugin that can be used with your own copy of [browserify-istanbul](https://github.com/devongovett/browserify-istanbul) is included as `require('tape-istanbul/plugin')`. In any other environment, configure Istanbul instrumentation and require the hook directly: `require('tape-istanbul/hook')`.
+
 ## API
 
 #### `tapeIstanbul([output])` -> `stream`
