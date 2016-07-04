@@ -12,7 +12,7 @@ const tapeIstanbul = require('./')
 const tapOutput = fs.readFileSync('fixture-output.txt', 'utf8')
 
 test('api', function (t) {
-  t.plan(2)
+  t.plan(3)
 
   browserify()
     .add(path.resolve(__dirname, 'fixture-test.js'))
@@ -31,7 +31,7 @@ test('api', function (t) {
 })
 
 test('cli', function (t) {
-  t.plan(2)
+  t.plan(3)
 
   browserify()
     .add(path.resolve(__dirname, 'fixture-test.js'))
