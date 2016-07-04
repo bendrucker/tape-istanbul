@@ -4,7 +4,7 @@
   "bin": {
     "tape-istanbul": "cli.js"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Print and parse code coverage with tape tests",
   "license": "MIT",
   "repository": "bendrucker/tape-istanbul",
