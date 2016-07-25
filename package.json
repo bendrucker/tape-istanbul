@@ -41,7 +41,7 @@
     "tape": "*"
   },
   "devDependencies": {
-    "browserify": "~13.0.1",
+    "browserify": "~13.1.0",
     "browserify-istanbul": "~2.0.0",
     "duplexify": "~3.4.3",
     "standard": "^7.0.0",
