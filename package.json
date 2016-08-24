@@ -44,7 +44,7 @@
     "browserify": "~13.1.0",
     "browserify-istanbul": "~2.0.0",
     "duplexify": "~3.4.3",
-    "standard": "^7.0.0",
+    "standard": "^8.0.0",
     "tape": "^4.0.0"
   },
   "files": [
