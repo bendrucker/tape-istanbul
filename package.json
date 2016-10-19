@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "concat-stream": "~1.5.1",
-    "global": "~4.3.0",
+    "global": "~4.3.1",
     "istanbul": "~0.4.4",
     "meow": "~3.7.0",
     "pify": "~2.3.0",
