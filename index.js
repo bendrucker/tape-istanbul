@@ -23,8 +23,14 @@ function tapeIstanbul (output) {
 
     function writeFile (coverage) {
       promiseify(fs.writeFile)(output || 'coverage.json', JSON.stringify(coverage, null, 2))
-        .then(resolve)
-        .catch(reject)
+        .then(function (results) {
+          pause.emit('end')
+          resolve(results)
+        })
+        .catch(function (err) {
+          pause.emit('error', err)
+          reject(err)
+        })
     }
   })
 
