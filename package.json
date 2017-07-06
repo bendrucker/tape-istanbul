@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "browserify": "~13.1.0",
-    "browserify-istanbul": "~2.0.0",
+    "carpetify": "^1.0.0",
     "duplexify": "~3.5.0",
     "standard": "^8.0.0",
     "tape": "^4.0.0"

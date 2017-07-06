@@ -8,5 +8,5 @@ function tapeIstanbulify (browserify, opts) {
   opts = opts || {}
   browserify
     .add(path.resolve(__dirname, 'hook.js'))
-    .transform('browserify-istanbul', opts)
+    .transform('carpetify', opts)
 }
