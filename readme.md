@@ -1,4 +1,4 @@
-# tape-istanbul [![Build Status](https://travis-ci.org/bendrucker/tape-istanbul.svg?branch=master)](https://travis-ci.org/bendrucker/tape-istanbul)
+# tape-istanbul [![Build Status](https://travis-ci.org/bendrucker/tape-istanbul.svg?branch=master)](https://travis-ci.org/bendrucker/tape-istanbul) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/tape-istanbul.svg)](https://greenkeeper.io/)
 
 > Print and parse code coverage with tape tests
 
