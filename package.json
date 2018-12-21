@@ -27,7 +27,7 @@
     "cli"
   ],
   "dependencies": {
-    "concat-stream": "~1.6.0",
+    "concat-stream": "~2.0.0",
     "global": "~4.3.0",
     "istanbul": "~0.4.4",
     "meow": "~5.0.0",
